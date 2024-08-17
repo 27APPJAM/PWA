@@ -2,7 +2,6 @@
     "theme_color": "#0066c8",
     "background_color": "#0066c8",
     "display": "fullscreen",
-    "scope": "/",
     "start_url": "/login",
     "app_name": "Whaling",
     "short_name": "whaling",
