@@ -3,7 +3,7 @@ import { Flex, IconButton, Box, Text, Link, Image } from '@chakra-ui/react';
 import { Link as RouterLink, } from 'react-router-dom';
 import { Chat, Home, Memo, ProfileNav } from '../common/import';
 
-const BottomNavBar = () => {
+const BottomNavBar: React.FC = () => {
     return (
         <Flex
             as="nav"

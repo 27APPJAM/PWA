@@ -16,3 +16,12 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 input::placeholder {
     color: #D7D7D7
 }
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #f87171;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1px;
+}

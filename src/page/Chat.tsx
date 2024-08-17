@@ -1,16 +1,18 @@
 import { Box, Button, Flex, Image, Input } from "@chakra-ui/react"
-import { Logo } from "../common/import"
+import { Logo, Profile } from "../common/import"
 import BottomNavBar from "../components/navbar"
 import { IoIosSend } from "react-icons/io";
 import AI from "../../public/icon.png";
 import { useEffect, useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { useNavigate } from "react-router-dom";
 
 
 const apiKey = "AIzaSyAdhceZxxYYzl1r9JboB-jQn8F8azTK6bM";
 const gemini = new GoogleGenerativeAI(apiKey);
 
 export const ChatPage = () => {
+    const navigate = useNavigate();
     const [chatList, setChatList] = useState(["환영합니다! AI 마음이예요! 무엇이든 물어보세요"]);
     const [chat, setChat] = useState("");
 
@@ -53,6 +55,9 @@ export const ChatPage = () => {
                         <UserChat content={item} key={index} />
                 )
             }
+            {
+                chatList.length === 3 && <Button position={"absolute"} bottom={"30%"} left={"10%"} w={"80%"} margin={"0 auto"} backgroundColor={"black"} color={"white"} onClick={() => navigate("/counsel")}>상담사와 연결하기</Button>
+            }
         </Flex>
         <Flex position={"absolute"} bottom={"12%"} justifyContent={"space-between"} left={0} width={"100%"} height={"10%"} p={"10px"}>
             <Input backgroundColor={"#f5f5f7"} w={"80%"} borderRadius={"15px"} value={chat} onChange={(e) => setChat(e.target.value)} />
@@ -78,7 +83,7 @@ const AIChat = ({ content }: { content: string }) => {
 const UserChat = ({ content }: { content: string }) => {
     return <Flex w={"100%"} position={"relative"} h={"100px"}>
         <Box position={"absolute"} right={"20px"} top={"10px"}>
-            <Image src={AI} w={"40px"} h={"40px"} borderRadius={"50%"} />
+            <Image src={Profile} w={"40px"} h={"40px"} borderRadius={"50%"} />
         </Box>
         <Box border={"2px solid #979DAC"} position={"absolute"} left={"70px"} top={"-10px"} p={"10px"} borderRadius={"15px 15px 0px 15px"} w={"60%"}>{content}</Box>
     </Flex>
