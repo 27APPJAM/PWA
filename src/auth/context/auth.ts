@@ -1,8 +1,15 @@
 import React from "react";
+import { IUserSignUp } from "../../types/user";
+
+export interface IUserSignIn {
+    id: string;
+    password: string;
+}
 
 interface AuthContextType {
     user: any;
-    signin: (user: string, callback: VoidFunction) => Promise<void>;
+    signin: (user: IUserSignIn, callback: VoidFunction) => Promise<void>;
+    signup: (user: IUserSignUp, callback: VoidFunction) => Promise<void>;
     signout: (callback: VoidFunction) => Promise<void>;
 }
 

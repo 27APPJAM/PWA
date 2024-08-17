@@ -1,3 +1,4 @@
 import { useLogin } from "./useLogin";
+import { useDimension } from "./useDimension";
 
-export { useLogin };
+export { useLogin, useDimension };
