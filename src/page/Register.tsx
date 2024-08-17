@@ -117,9 +117,9 @@ export const RegisterPage = () => {
                         zIndex="1"
                     >
                         <VStack align="stretch" p={4}>
-                            <Text cursor="pointer" onClick={e => ChangeGradeHandler(e.target.textContent)}>1등급</Text>
-                            <Text cursor="pointer" onClick={e => ChangeGradeHandler(e.target.textContent)}>2등급</Text>
-                            <Text cursor="pointer" onClick={e => ChangeGradeHandler(e.target.textContent)}>3등급</Text>
+                            <Text cursor="pointer" onClick={e => ChangeGradeHandler("1등급")}>1등급</Text>
+                            <Text cursor="pointer" onClick={e => ChangeGradeHandler("2등급")}>2등급</Text>
+                            <Text cursor="pointer" onClick={e => ChangeGradeHandler("3등급")}>3등급</Text>
                         </VStack>
                     </MotionBox>
                 </Box>
