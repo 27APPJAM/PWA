@@ -12,3 +12,7 @@ html, body, #root {
 h1, h2, h3, h4, h5, h6, p, a, span {
     font-family: "Pretendard";
 }
+
+input::placeholder {
+    color: #D7D7D7
+}

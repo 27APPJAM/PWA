@@ -11,19 +11,19 @@ export const JoinPage = () => {
         <Flex direction={"column"} alignItems={"center"} justifyContent={"space-around"} w={"80%"} h={"80%"}>
             <Box w={"90%"}>
                 <Text fontWeight={"500"} lineHeight={"20px"}>ID</Text>
-                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} placeholder="아이디를 입력해주세요" w={"98%"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} />
+                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} borderRadius={"5px"} placeholder="아이디를 입력해주세요" w={"98%"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} />
             </Box>
             <Box w={"90%"}>
                 <Text fontWeight={"500"} lineHeight={"20px"}>Email</Text>
-                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} placeholder="이메일을 입력해주세요" w={"98%"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} />
+                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} borderRadius={"5px"} placeholder="이메일을 입력해주세요" w={"98%"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} />
             </Box>
             <Box w={"90%"}>
                 <Text fontWeight={"500"} lineHeight={"20px"}>Password</Text>
-                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} placeholder="비밀번호를 입력해주세요" w={"98%"} />
+                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} border={"1px solid #D7D7D7"} borderRadius={"5px"} color={"#D7D7D7"} placeholder="비밀번호를 입력해주세요" w={"98%"} />
             </Box>
             <Box w={"90%"}>
                 <Text fontWeight={"500"} lineHeight={"20px"}>Password Check</Text>
-                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} placeholder="비밀번호를 입력해주세요" w={"98%"} />
+                <Input fontSize={"16px"} padding={"5px"} marginTop={"5px"} border={"1px solid #D7D7D7"} color={"#D7D7D7"} borderRadius={"5px"} placeholder="비밀번호를 입력해주세요" w={"98%"} />
             </Box>
             <Button w={"90%"} h={"40px"} backgroundColor={"#0066c8"} border={"none"} color={"white"} fontSize={"16px"} borderRadius={"8px"}>회원가입하기</Button>
             <Flex alignItems={"start"} w={"90%"}>
